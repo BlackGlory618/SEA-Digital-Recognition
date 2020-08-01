@@ -230,11 +230,11 @@ begin
                    num<=4'b0001;
             else if(y_cnt==3 && x1_cnt==1 && x2_cnt==1) begin
                    if(x1_cnt_r==1 && x2_cnt_l==1)
-                         num<=4'b0010;  
-                   else if (x1_cnt_r==1 && x2_cnt_l==1)	
-                         num<=4'b0011; 	
-                   else if(x1_cnt_r==1 && x2_cnt_l==1)
-                         num<=4'b0101;   
+                         num<=4'b0010;
+                   else if (x1_cnt_r==1 && x2_cnt_r==1)	
+                         num<=4'b0011;
+                   else if(x1_cnt_l==1 && x2_cnt_r==1)
+                         num<=4'b0101;
                    else
                          num<=4'b1010;
                    end 
